@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.primary-col {
+  color: #008ecc;
+}
+
+.primary-bg {
+  background: #008ecc;
+}
+
+.light-pr {
+  background-color: #f3f9fb;
+}
+
+.bg {
+  background-color: #f5f5f5;
+}
+
+.text-col {
+  color: #666666;
+}
+
+.heading {
+  color: #222222;
+}
