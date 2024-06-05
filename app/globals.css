@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 .primary-col {
   color: #008ecc;
 }
@@ -24,4 +30,20 @@
 
 .heading {
   color: #222222;
+}
+
+.hero {
+  transition: translate 300ms ease-in-out;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url("../public/rounded.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 500px;
+    height: 100%;
+    z-index: 2;
+  }
 }

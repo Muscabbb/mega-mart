@@ -1,7 +1,7 @@
 #Landing Page
 --[x] Header
 --[x] Dropdown Section
---[] Hero Section
+--[x] Hero Section
 
 #The Best Deal Section
 

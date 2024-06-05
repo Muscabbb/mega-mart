@@ -6,5 +6,5 @@ const client = createClient(apiKey);
 const query = "Product";
 
 export const result = client.photos
-  .search({ query, per_page: 50 })
+  .search({ query, per_page: 10 })
   .then((photos) => photos);
