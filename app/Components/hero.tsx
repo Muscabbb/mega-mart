@@ -53,7 +53,7 @@ function Hero({ images }: { images: string[] }) {
           <div
             key={image}
             style={{ translate: `${-100 * imageIndex}%` }}
-            className="hero relative z-10 bg-[#212844] w-full h-[400px] py-3 transition rounded-md flex flex-col lg:flex-row grow-0 shrink-0 lg:justify-around gap-4 lg:gap-0 lg:items-center my-5"
+            className="hero relative z-10 bg-[#212844] w-full h-[336px] py-3 transition rounded-md flex flex-col lg:flex-row grow-0 shrink-0 lg:justify-around gap-4 lg:gap-0 lg:items-center my-5"
           >
             <div className="flex flex-col gap-3 lg:gap-16 text-white z-10">
               <div className="text flex flex-col gap-2 text-center">

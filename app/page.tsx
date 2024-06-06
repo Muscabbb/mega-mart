@@ -1,3 +1,4 @@
+import BestDeals from "./Components/bestDeals";
 import Dropdown from "./Components/dropdown";
 import Header from "./Components/header";
 import Hero from "./Components/hero";
@@ -6,6 +7,7 @@ import { Suspense } from "react";
 
 export default async function Home() {
   const data: any = await result;
+
   const heroImages = [
     data.photos[0].src.original,
     data.photos[1].src.original,
@@ -14,6 +16,9 @@ export default async function Home() {
     data.photos[4].src.original,
     data.photos[5].src.original,
     data.photos[6].src.original,
+    data.photos[7].src.original,
+    data.photos[8].src.original,
+    data.photos[9].src.original,
   ];
 
   return (
@@ -25,6 +30,7 @@ export default async function Home() {
 
       <main className="container mx-auto">
         <Hero images={heroImages} />
+        <BestDeals images={heroImages} />
       </main>
     </>
   );

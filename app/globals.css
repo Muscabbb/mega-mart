@@ -47,3 +47,33 @@
     z-index: 2;
   }
 }
+
+.title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(50%);
+  height: 2px;
+  width: 20%;
+  background: #008ecc;
+}
+
+.card {
+  position: relative;
+  &::before {
+    content: "56% OFF";
+    position: absolute;
+    top: 0px;
+    right: -2px;
+    width: 55px;
+    height: 55px;
+    border-radius: 0 8px 0 15px;
+    font-size: 14px;
+    background: #008ecc;
+    color: white !important;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+}

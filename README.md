@@ -3,7 +3,11 @@
 --[x] Dropdown Section
 --[x] Hero Section
 
-#The Best Deal Section
+#[]The Best Deal Section
+
+#[] Loading Components
+
+#[] Error Page
 
 #Top Categories Section
 
