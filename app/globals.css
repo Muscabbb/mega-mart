@@ -77,3 +77,23 @@
     align-items: center;
   }
 }
+
+.cart-notification {
+  &::after {
+    content: attr(data-cart);
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: red;
+    font-size: 14px;
+    bottom: 0;
+    right: 0px;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(15px);
+  }
+}

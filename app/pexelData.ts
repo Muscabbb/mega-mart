@@ -8,3 +8,7 @@ const query = "Product";
 export const result = client.photos
   .search({ query, per_page: 10 })
   .then((photos) => photos);
+
+export async function getData() {
+  return await result;
+}

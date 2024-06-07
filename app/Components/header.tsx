@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { AiOutlineBars } from "react-icons/ai";
 import {
@@ -9,8 +10,14 @@ import {
 } from "react-icons/ci";
 import { HiOutlineBars3BottomLeft } from "react-icons/hi2";
 import { TbTruckDelivery } from "react-icons/tb";
+import { CartState } from "../Context/context";
 
 function Header() {
+  const {
+    state: { cart },
+    dispatch,
+  } = CartState();
+
   return (
     <nav>
       <div className="upper-part flex items-center text-[8px] md:text-sm justify-around bg py-4 w-full">
@@ -61,7 +68,13 @@ function Header() {
               </span>
               Sign Up/Sign In
             </h3>
-            <h3 className="text-lg text-col ml-1 flex items-center gap-1 cursor-pointer">
+            <h3 className="cart text-lg text-col ml-1 relative flex items-center gap-1 cursor-pointer ">
+              {cart.length > 0 && (
+                <span
+                  className="cart-notification"
+                  data-cart={cart.length}
+                ></span>
+              )}
               <span>
                 <CiShoppingCart className=" primary-col text-xl" />
               </span>
