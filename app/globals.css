@@ -32,6 +32,11 @@
   color: #222222;
 }
 
+.hero-section {
+  height: calc(99vh - 200px);
+  margin-top: 200px;
+}
+
 .hero {
   transition: translate 300ms ease-in-out;
   &::after {

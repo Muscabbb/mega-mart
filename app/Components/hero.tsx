@@ -35,7 +35,7 @@ function Hero({ images }: { images: string[] }) {
   }
 
   return (
-    <section className="relative overflow-hidden">
+    <section className="hero-section relative overflow-hidden">
       <div
         className="l-arrow z-20 absolute top-2/4 -translate-y-2/4 flex items-center justify-center left-0 lg:-left-4 lg:w-16 w-10 lg:h-16 h-10 border-4 lg:border-8 border-white rounded-full light-pr cursor-pointer"
         onClick={() => showPrev()}
