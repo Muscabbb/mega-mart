@@ -40,7 +40,7 @@ function BestDeals({ images }: { images: string[] }) {
                 <button
                   className=" bg-blue-300 text-xs p-1 flex items-center gap-1 rounded-md text-white cursor-pointer focus:outline-none hover:bg-[#008ecc] transition "
                   onClick={() =>
-                    dispatch({ type: "add", payload: { id: i, url: image } })
+                    dispatch({ type: "add", payload: { id: i, img: image } })
                   }
                 >
                   Add to Cart <CiShoppingCart />
