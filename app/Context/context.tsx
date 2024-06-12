@@ -10,10 +10,7 @@ function reducer(state: any, action: any) {
       return { cart: [...state.cart, { ...action.payload }] };
     case "remove":
       return {
-        cart: [
-          ...state.cart,
-          state.cart.filter((c: any) => c.id !== action.payload.id),
-        ],
+        cart: [...state.cart.filter((c: any) => c.id !== action.payload.id)],
       };
     default:
       return state;

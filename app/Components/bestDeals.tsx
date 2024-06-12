@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 import { CiShoppingCart } from "react-icons/ci";
 import { CartState } from "../Context/context";
+import { nanoid } from "nanoid";
 
 function BestDeals({ images }: { images: string[] }) {
   const { state, dispatch } = CartState();
@@ -40,7 +41,10 @@ function BestDeals({ images }: { images: string[] }) {
                 <button
                   className=" bg-blue-300 text-xs p-1 flex items-center gap-1 rounded-md text-white cursor-pointer focus:outline-none hover:bg-[#008ecc] transition "
                   onClick={() =>
-                    dispatch({ type: "add", payload: { id: i, img: image } })
+                    dispatch({
+                      type: "add",
+                      payload: { id: nanoid(), img: image },
+                    })
                   }
                 >
                   Add to Cart <CiShoppingCart />
