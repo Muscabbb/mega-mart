@@ -3,16 +3,10 @@
 --[x] Dropdown Section
 --[x] Hero Section
 
-#[]The Best Deal Section
+#[x]The Best Deal Section
 
-#[] Loading Components
+#[x] Loading Components
 
-#[] Error Page
+#[x] Error Page
 
-#Top Categories Section
 
-#Top Electronic Brand Section
-
-#Daily Essentials Section
-
-#Footer Section
